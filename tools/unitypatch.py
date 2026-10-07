@@ -100,14 +100,29 @@ class SerializedFile:
 
     # ---------------------------------------------------------------- patch
     def replace_object(self, path_id: int, blob: bytes) -> None:
+        """Write ``blob`` as the new content of object ``path_id``.
+
+        If the object's current slot is large enough (typical when re-applying a
+        patch that is already installed), the new blob is written *in place* so
+        the file does not grow.  Otherwise the blob is appended at the end of
+        the file and the object-table entry is repointed.
+        """
+        byte_start, byte_size, type_id = self.entry_info[path_id]
+        entry = self.entries[path_id]
+
+        if byte_size >= len(blob):
+            off = self.data_offset + byte_start
+            self.data[off:off + byte_size] = blob + b"\x00" * (byte_size - len(blob))
+            struct.pack_into("<I", self.data, entry + 16, len(blob))
+            self.entry_info[path_id] = (byte_start, len(blob), type_id)
+            return
+
         new_off = align(len(self.data), 16)
         self.data += b"\x00" * (new_off - len(self.data))
         self.data += blob
-        entry = self.entries[path_id]
         struct.pack_into("<q", self.data, entry + 8, new_off - self.data_offset)
         struct.pack_into("<I", self.data, entry + 16, len(blob))
-        self.entry_info[path_id] = (new_off - self.data_offset, len(blob),
-                                    self.entry_info[path_id][2])
+        self.entry_info[path_id] = (new_off - self.data_offset, len(blob), type_id)
         struct.pack_into(">q", self.data, 24, len(self.data))
         self.file_size = len(self.data)
 
