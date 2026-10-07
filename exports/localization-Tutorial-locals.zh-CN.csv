@@ -1,0 +1,169 @@
+Keys,Chinese
+tutorial,教程
+startScreen-demo,"踏胜利之路者，
+我向你致敬！
+
+<size=30>
+你有机会亲身体验第四工业帝国的战争机器。
+
+本试玩版旨在展示没有全局地图的 RTS 战斗。
+
+祝你好运，将军。
+</size>"
+startScreen2-demo,"你好！
+
+<size=30>
+请通过 Steam 启动本试玩版。
+游戏会参与商店的统计，这将有助于本项目。
+
+如果试玩版无法进入，说明《Dust Front RTS》已后撤重整、补充弹药与给养，待恢复元气后再度归来。
+开发仍在继续。
+</size>"
+endScreen-demo,"感谢你的游玩！
+<size=25>
+完整版将带来更多内容，包括更多单位、建筑、任务，当然还有游戏的核心——全局地图上的征服。
+
+试试其他难度、敌方基地规模和单位组合——游戏会带来不一样的体验。
+</size>"
+demo-currentElevation,当前难度
+demo-elevation-x1,常规强度
+demo-elevation-x2,强度 ×2
+demo-elevation-x3,强度 ×3
+demo-elevation-x1-Info,敌方对象的力量/生命值参数为常规值。
+demo-elevation-x2-Info,敌方对象的力量/生命值参数：×2
+demo-elevation-x3-Info,敌方对象的力量/生命值参数：×3
+demo-fightingFor,你正为第四工业帝国而战。
+demo-achivInfo,该数值表示最高难度系数。
+demo-newRecord,新的难度纪录！
+demo-achiv-base1,攻克敌方基地获胜。
+demo-achiv-base2,攻克 ×2 规模基地获胜
+demo-achiv-base3,攻克 ×3 规模基地获胜
+demo-achiv-base4,攻克 ×4 规模基地获胜
+demo-achiv-popupTitle,获得新成就！
+tip-demoShiftSetup,按住 Shift 可以更快地部署单位或调整设置。
+wishlist-text-0,如果你喜欢这个试玩版，就把游戏加入愿望单吧！
+wishlist-text-1,谢谢！游戏发售时会通知你。
+openSteam,打开 Steam
+addToWishlist,加入愿望单
+tutorial-gui-name,界面教程
+tutorial-overall-name,通用教程
+tutorial-deploy-0,这就是你选定的部队。需要把他们部署到战场上才能开始战斗。
+tutorial-deploy-0a,你也可以滚动鼠标滚轮来调整队形规模。
+tutorial-deploy-1,"所有单位部署完毕后，开始战斗的按钮就会出现。
+
+准备就绪后按下它。"
+tutorial-deploy-2,这个面板用于战术技能。它们本应在全局地图上设置，但试玩版提供了预设方案。
+tutorial-deploy-3,"这里显示你当前的目标。
+主目标为白色。
+次要目标为黄色。
+
+目前你只有主（必需）目标。"
+tutorial-deploy-3a,本次战斗的目标：
+tutorial-deploy-3b,"你需要控制三个区域。每个区域都会带来被动的资源收入。
+
+敌人会试图夺回它们。要占领，需在区域内保持部队或建筑。"
+tutorial-deploy-3c,"你还需要摧毁敌方关键建筑。
+它们在小地图上有标记。
+
+如果你自己的建筑被摧毁，你将被击败。"
+tutorial-deploy-4,"小地图会显示带对象的标记点。
+
+<color=#808080>灰点</color>——中立。
+<color=#FF4444>红点</color>——敌方。
+<color=#44FF44>绿点</color>——友方。
+<color=#A47068>暗橙色</color>——资源。
+<color=#7ECAE5>蓝色符号</color>表示主目标对象。
+
+圆圈标出占领点。"
+tutorial-deploy-5,镜头操作：
+tutorial-deploy-5a,键盘：
+tutorial-deploy-5b,按住鼠标滚轮：
+tutorial-deploy-5c,"你也可以把鼠标移到屏幕边缘来移动镜头。
+
+按住左 Alt 并滚动鼠标滚轮即可缩放。"
+tutorial-gui-0,"这是你的主要资源。
+
+用<color=#FF7078><size=25>材料</size></color>建造军队和建筑。
+
+<color=#FFFFFF><size=25>补给上限</size></color>——用于维持地图上的部队。
+
+<color=#FF0000><size=25>零件</size></color>让你发展科技。
+
+<color=#99CDFF><size=25>电力</size></color>为你的建筑供电。"
+tutorial-gui-1,"这块区域会根据情境变化。
+
+选中编组时——选中普通单位时显示。
+
+选中带选项的建筑时——会显示它的选项。"
+tutorial-gui-2,"建造类建筑还有第二个标签页，包含特殊与防御建筑。
+
+按「~」（波浪键）切换标签页。"
+tutorial-gui-3,这里显示技能（如果有）。
+tutorial-gui-4,"点击单位的图标会把镜头移到它身上。
+
+在这里你可以按类型设置攻击优先级。"
+tutorial-gui-5,"用快捷键选取单位的按钮，显示在屏幕上。
+
+F1 —— 所有工程单位（MCV 与起重机）
+F2 —— 所有作战单位
+F3 —— 所有单位"
+tutorial-gui-6,"按住「Ctrl」或「T」+ 数字键即可建立快捷编组。
+
+编组会显示在 F2 和 F3 右侧。"
+tutorial-basic-0,建造建筑
+tutorial-basic-0a,"建造精炼厂获取资源，建造兵营和机械厂组建军队。
+
+越多越好。想要取胜，你需要一座大型基地。"
+tutorial-basic-0b,"要建造，请先选中「MCV」或「建造起重机」。
+
+然后在菜单中选择建筑，再点选位置。"
+tutorial-basic-0c,"批量建造时，可一次选中多个带建造选项的对象。
+
+按下选项对应的快捷键、选好位置——系统会自动切换到下一个对象。"
+tutorial-basic-1,订购/生产单位
+tutorial-basic-1a,"生产部队。你的力量在于数量。
+
+管理好资源，确保既能维持庞大军队，也能推进经济发展。"
+tutorial-basic-2,选择对象
+tutorial-basic-2a,"拖拽方框即可框选建筑和单位。
+
+双击一个单位可选中地图上所有同类型单位。
+
+Shift —— 加入选择。Ctrl —— 从选择中移除。"
+tutorial-basic-3,单位操控
+tutorial-basic-3a,"右键 —— 移动到该位置。
+
+按住 G + 右键 —— 倒车移动。
+注意：无法在移动中开火的单位会无视沿途的敌人。"
+tutorial-basic-4,命令排队
+tutorial-basic-4a,"要排队下达命令，请按住「Shift」键。
+
+你也可以用战术暂停来下达命令。
+按「空格键」切换战术暂停。"
+tutorial-basic-5,移动攻击
+tutorial-basic-5a,"若要让部队一路推进到指定位置且不放过敌人，请使用「移动攻击」命令。
+
+按 A + 左键点击地面。
+单位会开始移动，并攻击沿途的敌人。"
+tutorial-basic-6,集火
+tutorial-basic-6a,"如果你需要集中火力打掉单个敌方目标：
+右键点击该敌人（不要按住「A」），所有单位都会尝试接近并攻击该目标。"
+tutorial-basic-7,占领中立建筑
+tutorial-basic-7a,"步兵可以进入建筑驻守，并从内部射击。建筑容量显示在其上方。
+
+这既能构成防御阵地，也能提供额外视野。"
+tutorial-basic-8,技能
+tutorial-basic-8a,"单位和建筑有时会拥有各种技能。
+
+例如「MCV」的技能可以让它在地图上移动，从而在遥远的地方进行建造。"
+tutorial-basic-8b,"你拥有全局维修技能。
+
+它可以维修你任意一座建筑，也能维修被占领的民用建筑，以及具备展开能力的大型单位（例如 MCV 或无畏级）。
+
+要使用它，按「B」并选择目标。"
+tutorial-basic-9,"你随时可以点击这个按钮回到本教程。
+
+祝你好运。"
+tutorial-reinforcements-0,增援
+tutorial-reinforcements-1,"增援能帮你扭转战局。
+部队将抵达指定地点。"

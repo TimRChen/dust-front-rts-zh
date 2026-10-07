@@ -69,6 +69,7 @@ python tools/restore.py
 
 ```
 ├── translations/zh-CN.json   ← 唯一需要翻译的数据文件（"<csv>/<key>": "中文"）
+├── exports/                  ← 成品 CSV（Keys + Chinese），方便直接合并进官方表格
 ├── tools/
 │   ├── apply.py              安装补丁（找游戏 → 加中文列 → 写回 → 备份）
 │   ├── restore.py            还原原版
@@ -79,6 +80,16 @@ python tools/restore.py
 │   └── CONTRIBUTING.md       参与翻译的方法
 └── .github/workflows/ci.yml  提交时自动校验译文
 ```
+
+### 给开发者 / 集成到官方版本
+
+`exports/` 里是 **Keys + Chinese** 两列的成品 CSV，按 `Keys` 与游戏自带的
+`Localization_DUST_FRONT - Main` / `- Tutorial-locals` 合并即可；
+游戏的语言下拉框由 CSV 列名生成，所以官方版本加上这一列就会多出中文选项，**无需改代码**。
+
+游戏商店页目前只列出 English / Russian，开发者在 Steam 讨论区公开表示过
+**不反对加入中文，只是暂无预算**（[原帖](https://steamcommunity.com/app/2610770/discussions/0/600775095761267308/)）。
+这份译文可以自由使用（含商业发行、无需署名）。
 
 ## 参与翻译 / 修改译文
 
