@@ -1,0 +1,27 @@
+# 不要提交任何游戏文件或由游戏文件生成的东西
+*.assets
+*.assets.zh-backup
+*.resS
+*.resource
+Dust Front RTS_Data/
+GameAssembly.dll
+UnityPlayer.dll
+
+# 本地调试产物
+test/
+work/
+source-reference.csv
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
