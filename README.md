@@ -22,7 +22,7 @@
 需要 Python 3.8+（脚本只用标准库，没有第三方依赖）。
 
 ```bash
-git clone https://github.com/<你的用户名>/dust-front-rts-zh.git
+git clone https://github.com/TimRChen/dust-front-rts-zh.git
 cd dust-front-rts-zh
 python tools/apply.py
 ```
@@ -118,22 +118,24 @@ python tools/restore.py
 
 如果开发方（RtsDimonDev）希望采用或需要下架本项目，联系后会立即配合。
 
-## 发布到 GitHub
+## 仓库地址与更新
 
-本目录已经是一个初始化好的 git 仓库（`main` 分支，已提交首版）。推送前建议先改成你自己的提交身份：
+仓库：<https://github.com/TimRChen/dust-front-rts-zh>
+
+想改进译文或新增语言，直接改 `translations/zh-CN.json` 然后提交：
 
 ```bash
+git clone https://github.com/TimRChen/dust-front-rts-zh.git
 cd dust-front-rts-zh
-git config user.name  "你的名字"
-git config user.email "你的邮箱或 GitHub noreply 邮箱"
-git commit --amend --reset-author --no-edit      # 用新身份重写首版提交
-
-# 新建空仓库后（不要在 GitHub 上勾选 README/License，避免冲突）
-git remote add origin git@github.com:<你的用户名>/dust-front-rts-zh.git
-git push -u origin main
+# 编辑 translations/zh-CN.json
+python tools/verify.py                 # 本地校验
+git commit -am "translate: ..."
+git push
 ```
 
-> 为什么仓库里没有 `resources.assets`：那是游戏本体文件，分发它等于分发游戏资源。
+CI 会在每次 push / PR 时自动校验译文格式，并拦截误提交的游戏文件。
+
+> **为什么仓库里没有 `resources.assets`**：那是游戏本体文件，分发它等于分发游戏资源。
 > 本仓库只包含译文和脚本，安装时由你本机的正版游戏文件在本地生成中文包。
-> `.gitignore` 与 CI 都会拦截误提交的游戏文件。
+
 
